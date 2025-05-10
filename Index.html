@@ -1,50 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfolio</title>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-white border-bottom shadow-sm px-4 d-flex align-items-center">
+        <a class="navbar-brand d-flex align-items-center gap-2 text-primary fw-bold" href="index.html">
+          <i class="bi bi-code-slash fs-3"></i> Zahi
+        </a>
         <ul class="nav nav-underline ms-auto">
-            <li class="nav-item">
-              <a class="nav-link about" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Others</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Contact</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#others">Others</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header class="bg-primary text-white py-3 ps-4">
+
+    <header class="bg-primary text-white py-4 ps-4">
         <h1>Welcome to My Portfolio</h1>
         <p>Explore my projects and skills</p>
     </header>
-    <main class="container my-5">
-        <div class="profile-section d-flex align-items-center gap-4 flex-wrap">
-            <div id="Name">
-                <h1 class="display-4 fw-bold mb-1">A. Zahi Faleel</h1>
-                <h2 class="h5 text-muted">Your Title</h2>
-            </div>
-            <div id="Profilepic">
-                <img src="Images/profile.jpg" alt="Profile Picture" class="profile-img shadow-sm">
-            </div>
-        </div>
-    </main>
-    
-    
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Your Name</p>
-    </footer>
 
+    <main class="container my-5">
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="profile-section d-flex align-items-center gap-4 flex-wrap">
+                <div id="Name">
+                    <h1 class="display-4 fw-bold mb-1">A. Zahi Faleel</h1>
+                    <h2 class="h5 text-muted">Your Title</h2>
+                </div>
+                <div id="Profilepic">
+                    <img src="Images/profile.jpg" alt="Profile Picture" class="profile-img shadow-sm" />
+                </div>
+            </div>
+            <p class="mt-3 text-muted" style="max-width: 700px; align-self: center;">
+                I'm a passionate developer with a strong interest in building clean, responsive, and user-focused web applications. I enjoy turning complex problems into simple, beautiful solutions and continuously learning new technologies.
+            </p>
+            
+        </section>
+
+        
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <h2 class="mb-4 text-left">Projects</h2>
+            <div class="project-scroll-wrapper position-relative">
+                <button class="scroll-btn left" onclick="scrollProjects('left')">&#8678;</button>
+
+                <div class="project-container d-flex overflow-hidden">
+                    <div class="project-card card shadow-sm flex-shrink-0">
+                        <img src="Images/project1.jpg" class="card-img-top" alt="Client Management System">
+                        <div class="card-body">
+                            <h5 class="card-title">Client Management System</h5>
+                            <p class="card-text">Electron app to manage client records and documents locally with backups.</p>
+                            <a href="https://github.com/yourusername/client-management-system" target="_blank" class="btn btn-sm btn-outline-primary mt-2">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card card shadow-sm flex-shrink-0">
+                        <img src="Images/project2.jpg" class="card-img-top" alt="Bookstore POS System">
+                        <div class="card-body">
+                            <h5 class="card-title">Bookstore POS System</h5>
+                            <p class="card-text">POS app for bookstore with inventory, receipt printing, and reporting.</p>
+                            <a href="https://github.com/yourusername/client-management-system" target="_blank" class="btn btn-sm btn-outline-primary mt-2">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card card shadow-sm flex-shrink-0">
+                        <img src="Images/project3.jpg" class="card-img-top" alt="Portfolio Website">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">Minimal responsive portfolio using HTML, CSS, and Bootstrap 5.</p>
+                            <a href="https://github.com/yourusername/client-management-system" target="_blank" class="btn btn-sm btn-outline-primary mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="scroll-btn right" onclick="scrollProjects('right')">&#8680;</button>
+            </div>
+        </section>
+
+          
+
+       
+
+        <!-- Others Section -->
+        <section id="others" class="content-section">
+            <h2>Others</h2>
+        
+            <!-- Skills Subsection -->
+            <div id="skills" class="subsection">
+                <h3>Skills</h3>
+                <p>I have experience in the following technologies:</p>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React, Angular</li>
+                    <li>Node.js</li>
+                    <li>Python, Java, C</li>
+                    <li>Electron, SQLite, MySQL</li>
+                    <li>Git & Github</li>
+                </ul>
+            </div>
+        
+            <!-- Certificates Subsection -->
+            <div id="certificates" class="subsection">
+                <h3>Certificates</h3>
+                <p>Here are some of my certifications:</p>
+                <div class="certificate-container">
+                    <!-- Example certificate images -->
+                    <div class="certificate">
+                        <img src="path-to-your-image/certificate1.jpg" alt="Certificate 1" class="certificate-img">
+                    </div>
+                    <div class="certificate">
+                        <img src="path-to-your-image/certificate2.jpg" alt="Certificate 2" class="certificate-img">
+                    </div>
+                    <!-- Add more certificates as necessary -->
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <p>This is the contact section content.</p>
+        </section>
+    </main>
+
+    <footer class="footer bg-primary text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-2">&copy; 2025 A. Zahi Faleel. All rights reserved.</p>
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
+                <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+                <li class="list-inline-item"><a href="#others" class="text-white text-decoration-none">Others</a></li>
+                <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script>
+        window.addEventListener('load', () => {
+            window.scrollTo(0, 0);
+        });
+
+        function scrollProjects(direction) {
+            const container = document.querySelector('.project-container');
+            const cardWidth = container.querySelector('.project-card').offsetWidth;
+        
+            if (direction === 'left') {
+                container.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            }
+        }
+        
+    </script>
+    
 </body>
 </html>
-
