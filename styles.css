@@ -90,29 +90,6 @@ header {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-/* Footer */
-footer {
-    background-color: var(--primary-blue);
-    color: white;
-}
-
-.footer a {
-    transition: all 0.2s ease;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-    color: #dbeeff;
-    font-size: 1.1em; 
-}
-
-.project-scroll-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .project-container {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -201,6 +178,43 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Enlarge the image when hovered */
 .certificate-img:hover {
-    transform: scale(1.2);
+    transform: scale(1.2);   
+}
+
+/* Change cursor to pointer on hover */
+.certificate-img:hover {
+    cursor: pointer;
+}
+
+/* Modal content styles */
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+}
+
+  
+
+/* Footer */
+footer {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.footer a {
+    transition: all 0.2s ease;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #dbeeff;
+    font-size: 1.1em; 
+}
+
+.project-scroll-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
