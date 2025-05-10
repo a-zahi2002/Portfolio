@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfolio</title>
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 </head>
 <body>
     <nav class="navbar bg-white border-bottom shadow-sm px-4 d-flex align-items-center">
@@ -57,7 +57,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Client Management System</h5>
                             <p class="card-text">Electron app to manage client records and documents locally with backups.</p>
-                            <a href="https://github.com/yourusername/client-management-system" target="_blank" class="btn btn-sm btn-outline-primary mt-2">View Project</a>
+                            <a href="https://github.com/yourusername/client-management-system" target="_blank" class="btn btn-sm btn-outline-primary mt-2" rel="noopener">View Project</a>
                         </div>
                     </div>
                     <div class="project-card card shadow-sm flex-shrink-0">
@@ -65,7 +65,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Bookstore POS System</h5>
                             <p class="card-text">POS app for bookstore with inventory, receipt printing, and reporting.</p>
-                            <a href="https://github.com/yourusername/client-management-system" target="_blank" class="btn btn-sm btn-outline-primary mt-2">View Project</a>
+                            <a href="https://github.com/yourusername/client-management-system" target="_blank" class="btn btn-sm btn-outline-primary mt-2" rel="noopener">View Project</a>
                         </div>
                     </div>
                     <div class="project-card card shadow-sm flex-shrink-0">
@@ -73,7 +73,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Portfolio Website</h5>
                             <p class="card-text">Minimal responsive portfolio using HTML, CSS, and Bootstrap 5.</p>
-                            <a href="https://github.com/yourusername/client-management-system" target="_blank" class="btn btn-sm btn-outline-primary mt-2">View Project</a>
+                            <a href="https://github.com/yourusername/client-management-system" target="_blank" class="btn btn-sm btn-outline-primary mt-2" rel="noopener">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -109,24 +109,60 @@
                 <h3>Certificates</h3>
                 <p>Here are some of my certifications:</p>
                 <div class="certificate-container">
-                    <!-- Example certificate images -->
                     <div class="certificate">
                         <img src="path-to-your-image/certificate1.jpg" alt="Certificate 1" class="certificate-img">
                     </div>
                     <div class="certificate">
                         <img src="path-to-your-image/certificate2.jpg" alt="Certificate 2" class="certificate-img">
                     </div>
-                    <!-- Add more certificates as necessary -->
                 </div>
             </div>
         </section>
         
 
         <!-- Contact Section -->
-        <section id="contact" class="content-section">
-            <h2>Contact</h2>
-            <p>This is the contact section content.</p>
-        </section>
+<section id="contact" class="content-section py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-left">Contact Me</h2>
+  
+      <div class="row">
+        <!-- Contact Info -->
+        <div class="col-md-5 mb-4">
+            <br><br>
+          <h5>Contact Information</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-envelope-fill me-2"></i><a href="mailto:a.zahi2002@gmail.com" class="text-decoration-none">a.zahi2002@gmail.com</a></li>
+            <br>
+            <li><i class="bi bi-telephone-fill me-2"></i>+94 7X XXX XXXX</li>
+            <br>
+            <li><i class="bi bi-github me-2"></i><a href="https://github.com/a-zahi2002" target="_blank" rel="noopener">github.com/a-zahi2002</a></li>
+            <br>
+            <li><i class="bi bi-linkedin me-2"></i><a href="https://www.linkedin.com/in/a-zahi-faleel-a929411aa" target="_blank" rel="noopener">linkedin.com/in/a-zahi-faleel</a></li>
+          </ul>          
+        </div>
+  
+        <!-- Contact Form -->
+        <div class="col-md-7">
+          <form action="mailto:a.zahi2002@gmail.com" method="POST" enctype="text/plain">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" name="name" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" name="email" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
     </main>
 
     <footer class="footer bg-primary text-white text-center py-4 mt-5">
